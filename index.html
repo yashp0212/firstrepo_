@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-xog32SsJRMqYKUFDmDUP8w+yKcV4cQ5CUhQj6Pf5dxJtf/JLEpi+OpNfKB3k8pZPkwcf9V7tq2MTQzBJkFfG5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+        }
+
+        .navbar-brand {
+            color: #fff !important;
+        }
+
+        .navbar-nav .nav-link {
+            color: #fff !important;
+        }
+
+        .card {
+            margin-bottom: 20px;
+        }
+
+        .footer-wrapper_links-list a {
+            color: #fff;
+        }
+
+        .footer-wrapper_branding {
+            margin-top: 20px;
+        }
+
+        .footer-wrapper_branding-social div {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-size: cover;
+        }
+
+        .facebook {
+            background-image: url('https://path/to/facebook-icon.png');
+        }
+
+        .instagram {
+            background-image: url('https://path/to/instagram-icon.png');
+        }
+
+        .linkedin {
+            background-image: url('https://path/to/linkedin-icon.png');
+        }
+
+        .twitter {
+            background-image: url('https://path/to/twitter-icon.png');
+        }
+
+        .youtube {
+            background-image: url('https://path/to/youtube-icon.png');
+        }
+    </style>
+</head>
+
+<body class="bg-black">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-xl bg-success fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">geeksforgeeks</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" href="https://www.geeksforgeeks.org/web-pages/">Home</a>
+                        <a class="nav-link" href="https://www.geeksforgeeks.org/about/">About</a>
+                        <a class="nav-link" href="https://www.geeksforgeeks.org/computer-science-projects/">Projects</a>
+                        <a class="nav-link" href="https://www.geeksforgeeks.org/geek-of-the-year/">Achievements</a>
+                        <a class="nav-link" href="https://www.geeksforgeeks.org/about/contact-us/">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container text-center mt-5 pt-5">
+            <h1>Hi Geeks!</h1>
+        </div>
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20220512131412/Student-Chapter-Article-Banner.png"
+                        class="d-block w-100" alt="Banner Image 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi4jOD4fGPRk1GHYJMKUuHFkMW2ysSMRz9Pa5WauAxQncICQClTrB1Zf-lsmiWEY10cdeSLW7FTB4t8ClzTo7rexKSRU4qthEB48DKXlLRydAwtmNmVfwhHbIa5Xv0kwpcy0Ta4npAW1pEKbNiuAsDaKTXeE8uHGs7TbW0MKu3KDrhUBnQN9t9Pk2Nc/s1293/Geeks%20for%20Geeks%20C++%20Solutions.jpg"
+                        class="d-block w-100" alt="Banner Image 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://static.startuptalky.com/2021/06/GeeksforGeeks-StartupTalky.jpg"
+                        class="d-block w-100" alt="Banner Image 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="container text-center mt-5">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card bg-dark text-white">
+                        <img src="https://imgs.search.brave.com/OGMjrHsR7zpNySX3IMURrIs_jC-LLRJrJm6AH61ew5s/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZWVrc2Zvcmdl/ZWtzLm9yZy93cC1j/b250ZW50L3VwbG9h/ZHMvMjAxOTA4MDIw/MjE2MDcvZ2Vla3Mx/NC5wbmc"
+                            class="card-img-top" alt="About Image">
+                        <div class="card-body">
+                            <h5 class="card-title">GeeksforGeeks</h5>
+                            <p class="card-text">Here is a quick view of the history of GeeksforGeeks.</p>
+                            <a href="https://www.geeksforgeeks.org/about/" class="btn btn-success">Click here</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-8">
+                    <h1>About me</h1>
+                    <p>
+                        Before computers were developed, people used sticks, stones, and bones as counting tools. As
+                        technology advanced and the human mind improved with time, more computing devices were developed
+                        like Abacus, Napier’s Bones, etc. These devices were used as computers for performing
+                        mathematical computations but not very complex ones.
+                    </p>
+                    <p>
+                        Some of the popular computing devices are described below, starting from the oldest to the
+                        latest or most advanced technology developed:
+                    </p>
+                    <h3>Abacus</h3>
+                    <p>
+                        Around 4000 years ago, the Chinese invented the Abacus, and it is believed to be the first
+                        computer. The history of computers begins with the birth of the Abacus.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container text-center mt-5">
+            <div class="row">
+                <p class="h3">Computer Science Projects:</p>
+                <div class="col-lg-6">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Project</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td class="table-active">
+                                    <a href="https://www.geeksforgeeks.org/opencv-c-program-face-detection/">OpenCV C++
+                                        Program for Face Detection</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td class="table-active">
+                                    <a href="https://www.geeksforgeeks.org/computer-science-projects/">
+                                        OpenCV C++ Program to blur an image</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td class="table-active">
+                                    <a href="https://www.geeksforgeeks.org/computer-science-projects/">
+                                        OpenCV C++ Program to create a single colored blank image</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td class="table-active">
+                                    <a href="https://www.geeksforgeeks.org/computer-science-projects/">
+                                        Java Program to Implement wheel Sieve</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td class="table-active">
+                                    <a href="https://www.geeksforgeeks.org/computer-science-projects/">
+                                        Java Program for Bouncing Ball</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">6</th>
+                                <td class="table-active">
+                                    <a href="https://www.geeksforgeeks.org/computer-science-projects/">
+                                        Java Program to Create a Spring Layout</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-lg-6">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Project</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">7</th>
+                                <td class="table-active">
+                                    <a href="https://www.geeksforgeeks.org/computer-science-projects/">
+                                        Java Program to Create a Rectangular Menu</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">8</th>
+                                <td class="table-active">
+                                    <a href="https://www.geeksforgeeks.org/computer-science-projects/">
+                                        Java Program to Create a Ellipse 2D and Rectangle 2D</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">9</th>
+                                <td class="table-active">
+                                    <a href="https://www.geeksforgeeks.org/computer-science-projects/">
+                                        Image Processing in Java - Creating a Random Pixel Image</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">10</th>
+                                <td class="table-active">
+                                    <a href="https://www.geeksforgeeks.org/computer-science-projects/">
+                                        Creating a Chess Board</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">11</th>
+                                <td class="table-active">
+                                    <a href="https://www.geeksforgeeks.org/computer-science-projects/">
+                                        Java Program to Rotate a Rectangle</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">12</th>
+                                <td class="table-active">
+                                    <a href="https://www.geeksforgeeks.org/computer-science-projects/">
+                                        Java Program to Read and Display the Content of XML File</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card bg-black">
+                        <div class="card-header"></div>
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <ul class="footer-wrapper_links-list bg-black">
+                                <li><a href="https://www.geeksforgeeks.org/typescript/?ref=footer">TypeScript</a></li>
+                                <li><a href="https://www.geeksforgeeks.org/learn-reactjs/?ref=footer">ReactJS</a></li>
+                                <li><a href="https://www.geeksforgeeks.org/nextjs/?ref=footer">NextJS</a></li>
+                                <li><a href="https://www.geeksforgeeks.org/angularjs/?ref=footer">AngularJS</a></li>
+                                <li><a href="https://www.geeksforgeeks.org/nodejs/?ref=footer">NodeJS</a></li>
+                                <li><a href="https://www.geeksforgeeks.org/express-js/?ref=footer">Express.js</a></li>
+                                <li><a href="https://www.geeksforgeeks.org/lodash/?ref=footer">Lodash</a></li>
+                                <li><a href="https://www.geeksforgeeks.org/web-browser-a-complete-overview/?ref=footer">Web
+                                        Browser</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card bg-black">
+                        <div class="card-header"></div>
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <ul class="footer-wrapper_links-list">
+                                <li><a href="https://www.geeksforgeeks.org/java/?ref=footer">Java</a></li>
+                                <li><a href="https://www.geeksforgeeks.org/c-plus-plus/?ref=footer">C++</a></li>
+                                <li><a href="https://www.geeksforgeeks.org/php-tutorials/?ref=footer">PHP</a></li>
+                                <li><a href="https://www.geeksforgeeks.org/golang/?ref=footer">GoLang</a></li>
+                                <li><a href="https://www.geeksforgeeks.org/sql-tutorial/?ref=footer">SQL</a></li>
+                                <li><a href="https://www.geeksforgeeks.org/r-tutorial/?ref=footer">R Language</a></li>
+                                <li><a href="https://www.geeksforgeeks.org/android-tutorial/?ref=footer">Android
+                                        Tutorial</a>
+                                </li>
+                                <li><a
+                                        href="https://www.geeksforgeeks.org/geeksforgeeks-online-tutorials-free/?ref=footer">Tutorials
+                                        Archive</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card bg-black">
+                        <div class="card-header"></div>
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <ul class="footer-wrapper_links-list">
+                                <li><a href="https://practice.geeksforgeeks.org/events/rec/job-a-thon/?ref=footer">Job-A-Thon
+                                        Hiring Challenge</a></li>
+                                <li><a
+                                        href="https://practice.geeksforgeeks.org/events/rec/gfg-hackathon/?ref=footer">Hack-A-Thon</a>
+                                </li>
+                                <li><a
+                                        href="https://practice.geeksforgeeks.org/events/rec/gfg-weekly-coding-contest?utm_source=geeksforgeeks&utm_medium=footer&utm_campaign=gfgweekly/?ref=footer">GfG
+                                        Weekly Contest</a></li>
+                                <li><a
+                                        href="https://www.geeksforgeeks.org/courses/category/all?courseType=offline&courseFeeType=all/?ref=footer">Offline
+                                        Classes (Delhi/NCR)</a></li>
+                                <li><a
+                                        href="https://www.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=footer&utm_campaign=course/?ref=footer">DSA
+                                        in JAVA/C++</a></li>
+                                <li><a
+                                        href="https://www.geeksforgeeks.org/courses/mastering-system-design-low-level-to-high-level-solutions?utm_source=geeksforgeeks&utm_medium=footer&utm_campaign=course/?ref=footer">Master
+                                        System Design</a></li>
+                                <li><a
+                                        href="https://www.geeksforgeeks.org/courses/competitive-programming-cp?utm_source=geeksforgeeks&utm_medium=footer&utm_campaign=course">Master
+                                        CP</a></li>
+                                <li><a href="https://www.geeksforgeeks.org/videos/?ref=footer">GeeksforGeeks Videos</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container text-center">
+            <h1>Contact Us</h1>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" class="form-control" id="subject" placeholder="Enter subject">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-success">Submit</button>
+
+            </form>
+        </div>
+
+        <footer class="bg-dark text-white py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="footer-links">
+                            <ul class="list-unstyled">
+                                <li><a href="https://www.geeksforgeeks.org/about/"
+                                        class="text-decoration-none text-white">About</a></li>
+                                <li><a href="https://www.geeksforgeeks.org/privacy-policy/"
+                                        class="text-decoration-none text-white">Privacy Policy</a></li>
+                                <li><a href="https://www.geeksforgeeks.org/cookie-policy/"
+                                        class="text-decoration-none text-white">Cookie Policy</a></li>
+                                <li><a href="https://www.geeksforgeeks.org/terms-of-service/"
+                                        class="text-decoration-none text-white">Terms of Service</a></li>
+                                <li><a href="https://www.geeksforgeeks.org/contact/"
+                                        class="text-decoration-none text-white">Contact</a></li>
+                            </ul>
+                            <address class="mt-3">
+                                GeeksforGeeks Ltd.<br>
+                                123 Geeks St, Codeville<br>
+                                Geekland, GKS 45678<br>
+                                Email: contact@geeksforgeeks.org<br>
+                                Phone: +123-456-7890
+                            </address>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <div class="footer-branding">
+                            <p class="mb-0">© GeeksforGeeks</p>
+                            <div class="footer-social-icons mt-2">
+                                <a href="#" class="me-3 text-white"><i class="fab fa-facebook-f"
+                                        aria-label="Facebook"></i></a>
+                                <a href="#" class="me-3 text-white"><i class="fab fa-instagram"
+                                        aria-label="Instagram"></i></a>
+                                <a href="#" class="me-3 text-white"><i class="fab fa-linkedin-in"
+                                        aria-label="LinkedIn"></i></a>
+                                <a href="#" class="me-3 text-white"><i class="fab fa-twitter"
+                                        aria-label="Twitter"></i></a>
+                                <a href="#" class="text-white"><i class="fab fa-youtube" aria-label="YouTube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="yash.css">
+</body>
+
+</html>

@@ -1,0 +1,206 @@
+/* Optional CSS for Footer Styling */
+.footer-links ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+@media (max-width: 991.98px) {
+    .col-lg-4 {
+        flex: 0 0 50%;
+        /* Two columns on medium devices */
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .col-lg-4 {
+        flex: 0 0 100%;
+        /* Full width on small devices */
+        max-width: 100%;
+    }
+}
+
+.footer-links ul li {
+    margin-bottom: 8px;
+}
+
+.footer-branding {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.footer-social-icons a {
+    font-size: 1.5rem;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.footer-social-icons a:hover {
+    color: #6c757d;
+    /* Hover color */
+}
+
+.address {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-top: 10px;
+}
+
+.address strong {
+    color: #fff;
+}
+
+html {
+    background-color: black;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.navbar {
+    margin: 0;
+    padding: 1em 0;
+}
+
+.navbar-brand {
+    font-size: 2em;
+    color: white !important;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-variant: small-caps;
+    text-align: center;
+    margin: auto;
+    text-transform: lowercase;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.2em;
+    color: white !important;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-variant: small-caps;
+    text-align: center;
+    margin: auto;
+    text-transform: lowercase;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: whitesmoke;
+    color: black !important;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1 {
+    padding: 20px;
+    color: white;
+    text-align: center;
+    background-color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-bottom: 2px solid white;
+}
+
+.col-8 h1 {
+    color: green;
+    text-decoration: underline;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card {
+    margin: 2em auto;
+    padding: 1em;
+    border: 1px solid #333;
+    background-color: #222;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    text-align: left;
+}
+
+.h3 {
+    font-size: 2em;
+    padding: 20px;
+    color: white;
+    text-align: left;
+    background-color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-bottom: 2px solid white;
+}
+
+.row {
+    padding-bottom: 2em;
+}
+
+li {
+    font-size: 1.2em;
+    color: white;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.ul li {
+    background-color: green;
+    margin: 0.5em 0;
+    padding: 0.5em;
+    border-radius: 5px;
+}
+
+.carousel-inner {
+    margin: auto;
+    width: 60%;
+    height: auto;
+    padding-bottom: 2em;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+.footer-wrapper_branding {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.footer-wrapper_branding p {
+    margin: 0.5em 0;
+}
+
+.footer-wrapper_links-list a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-wrapper_links-list a:hover {
+    text-decoration: underline;
+}
+
+.footer-wrapper_branding-social div {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    margin: 0 0.5em;
+}
+
+form {
+    color: white;
+    background-color: black;
+    font-size: larger;
+    text-align: left;
+    padding: 1em;
+    border-radius: 10px;
+    border: 1px solid #333;
+    margin: 1em 0;
+}
